@@ -3,6 +3,7 @@ import { RotateCcw, Unlock, ZoomIn, ZoomOut, X } from 'lucide-react';
 import { validateWordPassword } from '../utils/passwordValidation';
 import { playOpenSound, playKeySound, playDeleteSound, playClearSound } from '../utils/safeSounds';
 import myImage from '../assets/kasalar.png';
+import InnerVoicePlayer from './InnerVoicePlayer';
 
 interface SafeTwoProps {
   onUnlock: () => void;
@@ -66,9 +67,12 @@ e.preventDefault();
             </button>
           </div>
 
+          <InnerVoicePlayer />
+
           {/* Story Text */}
           <div className="prose prose-invert max-w-none mb-8">
             <div className="text-gray-200 leading-relaxed space-y-4 text-base lg:text-lg">
+              <p></p>
               <p>
                 Kasayı açmayı başardığında, içinde seni bir sürpriz bekliyordu: başka bir kasa. 
                 Sanki biri bilinçli olarak ardı ardına engeller koymuş gibiydi. Bu ikinci kasanın 

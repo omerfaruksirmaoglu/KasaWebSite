@@ -2,6 +2,7 @@ import React from 'react';
 import { RotateCcw } from 'lucide-react';
 import qrCodeImageOne from '../assets/qr-kod-bir.png';
 import qrCodeImageTwo from '../assets/qr-kod-iki.png';
+import InnerVoicePlayer from './InnerVoicePlayer';
 
 interface QRScreenProps {
   onRestart: () => void;
@@ -29,9 +30,16 @@ const QRScreen: React.FC<QRScreenProps> = ({ onRestart }) => {
             </button>
           </div>
 
+          <InnerVoicePlayer 
+            src="/voice/edanur2.mp3" 
+            title="Edanur'un İç Sesi" 
+            className="mb-4" 
+          />
+
           {/* Story Text */}
           <div className="prose prose-invert max-w-none mb-12">
             <div className="text-gray-200 leading-relaxed space-y-4 text-base lg:text-lg">
+              <p></p>
               <p>
                 İkinci kasayı incelerken, içinde seni bekleyen bir başka sırra rastladın. 
                 Bu kez karşına bir QR kod çıktı. Sanki seni fiziksel dünyanın ötesinde, 
