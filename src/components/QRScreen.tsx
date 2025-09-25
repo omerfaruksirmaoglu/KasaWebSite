@@ -60,7 +60,7 @@ const QRScreen: React.FC<QRScreenProps> = ({ onRestart }) => {
                 </p>
               </div>
               <p>
-                Artık önünde yeni bir kapı vardı. Tek yapman gereken bu bilgileri doğru yerde kullanmaktı.
+                Artık önünde yeni bir kapı vardı. Tek yapman gereken bu bilgileri doğru yerde kullanmak...
               </p>
             </div>
           </div>
